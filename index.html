@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Zeichenkettentrennungsmaschine</title>
+</head>
+<body>
+    
+    <section>
+        <h1>Zeichenkettentrennungsmaschine</h1>
+        <form action="">
+            <h3>Zu Trennende Zeichen:</h3>
+            <input type="text" name="" id="eingabe_feld">
+            <h3>Zeichenkette für die Trennungsposition:</h3>
+            <input type="text" name="" id="eingabe_trennung">
+            <br><br>
+
+            <input type="radio" name="trenn_richtung" id="firstIn" checked>
+            <label for="trenn_richtung">davor abtrennen</label>
+            <br>
+            <input type="radio" name="trenn_richtung" id="secondIn">
+            <label for="trenn_richtung">danach abtrennen</label>
+            <br> <br>
+            <input type="button" value="Trennen" onclick="trennFunction()">
+        </form>
+        <br>
+        <h2>Ausgabe</h2>
+
+        <section id="resultAusgabe">
+            <h3 id="first_part">Vorderer Teil:</h3>
+            <h3 id="second_part">Hinterer Teil:</h3>
+
+        </section>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
