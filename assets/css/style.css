@@ -1,3 +1,59 @@
-input[type=text]{
-    width: 500px;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
+@keyframes pulseForm{
+    0%,100% {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    50%{
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+}
+section:first-child{
+    padding: 30px;
+    width: 700px;
+    animation: pulseForm 5s infinite;
+    border-radius: 30px;
+
+}
+
+input[type=text]{
+    outline: none;
+    width: 700px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.btn{
+    width: 30%;
+    height: 50px;
+    border:none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    /* transition: all 3s; */
+}
+.btn:hover{
+    color: brown;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    box-shadow: rgba(18, 67, 122, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 3s;
+    transition: box-shadow 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+
