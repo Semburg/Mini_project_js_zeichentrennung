@@ -11,7 +11,11 @@ function trennFunction() {
     let trennResult = trennItem.split(trennPoint)
     firstPart.innerHTML = "Vorderer Teil:";
     secondPart.innerHTML = "Hinterer Teil:";
-    if (trennItem.includes(trennPoint)) {
+
+    if (trennItem == 0 || trennItem == null, trennPoint == 0 || trennPoint == null){
+        alert("Please Fill All Required Field");
+        return false;
+    } else if (trennItem.includes(trennPoint)) {
         firstPart.style.color = "black";
         if (trennNach.checked) {
             firstPart.innerHTML += " " + trennResult[0] + trennPoint
