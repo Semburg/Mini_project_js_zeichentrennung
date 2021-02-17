@@ -21,7 +21,6 @@ function trennFunction() {
         secondPart.style.color = "red";
         firstPart.innerHTML += " " + "Eingabe bei Eingabefeld und/oder Trennfeld fehlt!"
         secondPart.innerHTML += " " + "Eingabe bei Eingabefeld und/oder Trennfeld fehlt!";
-
         return false;
     } else if (trennItem.includes(trennPoint)) {
         
@@ -37,5 +36,4 @@ function trennFunction() {
         firstPart.innerHTML += " " + "Eingabefehler bei Trennzeichen!"
         secondPart.innerHTML += " " + trennItem;
     }
-
 }

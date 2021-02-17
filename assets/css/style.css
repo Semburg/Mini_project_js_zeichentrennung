@@ -55,5 +55,10 @@ input[type=text]{
     transition: all 3s;
     cursor: pointer;
 }
+.btn:active{
+    color: brown;
+    box-shadow: none;
+    transition: all .01s;
+}
 
 
